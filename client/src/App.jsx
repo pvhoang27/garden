@@ -1,6 +1,7 @@
 import React from "react";
+
 import Header from "./components/Header.jsx";
-import PlantList from "./components/PlantList.jsx";
+import HomePage from "./components/HomePage.jsx";
 import "./styles.css";
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
     <div>
       <Header />
       <main>
-        <PlantList />
+        <HomePage />
       </main>
     </div>
   );
