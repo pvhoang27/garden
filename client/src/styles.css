@@ -1,0 +1,35 @@
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  background: #fafafa;
+}
+.header {
+  padding: 1rem;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+.plant-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+}
+.plant-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #eee;
+  padding: 1rem;
+  text-align: center;
+}
+.plant-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+@media (max-width: 600px) {
+  .plant-list {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+}
