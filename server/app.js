@@ -1,7 +1,10 @@
+import authRoutes from "./routes/auth.js";
+app.use("/api/auth", authRoutes);
 import express from "express";
 import cors from "cors";
 import mongoose from "mongoose";
 import plantRoutes from "./routes/plants.js";
+import categoryRoutes from "./routes/categories.js";
 
 const app = express();
 app.use(cors());
@@ -13,6 +16,7 @@ mongoose.connect("mongodb://localhost:27017/garden", {
 });
 
 app.use("/api/plants", plantRoutes);
+app.use("/api/categories", categoryRoutes);
 
 app.get("/", (req, res) => {
   res.send("Garden CMS API");
