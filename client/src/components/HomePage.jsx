@@ -26,7 +26,6 @@ export default function HomePage() {
   return (
     <div className="homepage">
       <section className="intro-section">
-        <h1>Green Garden Showcase</h1>
         <p className="intro-text">
           Chào mừng bạn đến với bảo tàng số về vườn cây cảnh của gia đình chúng
           tôi! Nơi đây lưu giữ và trưng bày những tác phẩm cây cảnh đặc sắc, mỗi
