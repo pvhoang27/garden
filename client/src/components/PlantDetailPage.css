@@ -1,0 +1,59 @@
+.plant-detail-container {
+  max-width: 800px;
+  margin: 32px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  padding: 32px;
+}
+.plant-detail-container h2 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+.plant-detail-container h2 span {
+  font-size: 1.1rem;
+  color: #4a7c59;
+}
+.plant-detail-info > div {
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+.plant-detail-gallery {
+  margin-top: 24px;
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 12px;
+}
+.gallery-img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  cursor: zoom-in;
+  transition: transform 0.2s;
+}
+.gallery-img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+.plant-detail-video {
+  margin-top: 32px;
+}
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
