@@ -1,4 +1,38 @@
 /* Header styles */
+.header-unified-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7rem 2vw 0.7rem 2vw;
+  background: #fff;
+  gap: 32px;
+}
+.header-unified-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.header-unified-nav {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+@media (max-width: 700px) {
+  .header-unified-bar {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0.5rem 1vw 0.5rem 1vw;
+  }
+  .header-unified-nav {
+    justify-content: center;
+    width: 100%;
+  }
+  .header-title {
+    font-size: 1.3rem !important;
+  }
+}
 .header-main {
   background: #fff;
   border-bottom: 1.5px solid #e0e0e0;
